@@ -1,0 +1,257 @@
+:root {
+  /* основной цвет фона */
+  --primary-background-color: #ffffff;
+  /* дополнительный цвет фона */
+  --background-color: #f5f4fa;
+  /* дополнительный цвет подложки */
+  --pas-background-color: #e5e5e5;
+
+  /* основной цвет текста */
+  --title-text-color: #212121;
+  /* дополнительный цвет текста */
+  --accent-text-color: #757575;
+  /* основной цвет текстового акцента */
+  --primary-text-color: #ffffff;
+  /* дополнительный цвет текстового акцента */
+  --logo-text-color: #000000;
+  /* основной цвет акцента */
+  --accent-color: #2196f3;
+  /* основной цвет фона hero*/
+  --hero-background-color: #2f303a;
+  --accent-background-dark-button: #188ce8;
+
+  /* основные шрифты */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+/* body */
+body {
+  background-color: var(--primary-background-color);
+  color: var(--title-text-color);
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+p {
+  color: var(--accent-text-color);
+  font-weight: 400;
+}
+
+/* logo */
+.logo {
+  color: var(--logo-text-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.type {
+  color: var(--accent-color);
+}
+
+/*  на линках */
+
+/* .logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+} */
+
+/* nav */
+/* убрать подчеркивание по ховеру */
+.site-nav .link,
+.site-nav .link.current:hover {
+  color: var(--title-text-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+/* контакті по ховеру */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* убрать точечку */
+.list {
+  list-style: none;
+}
+
+/* auth nav */
+.auth-nav .link {
+  color: var(--accent-text-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+  background-color: var(--hero-background-color);
+}
+
+.hero-title {
+  color: var(--primary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background-color: var(--accent-background-dark-button);
+}
+
+/* main */
+/* section feature */
+.section p {
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+/* 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.feature-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.comand .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.comand p {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--hero-background-color);
+  --new-accent: var(--primary-background-color);
+  color: var(--new-accent);
+}
+
+/* logo */
+.footer.logo {
+  color: var(--primary-background-color);
+}
+
+.address-nav .link {
+  color: #ffffff96;
+  text-decoration: none;
+}
+
+.address-nav p {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+/* page Portfolio */
+/* radiobuttons */
+.stick.button {
+  background-color: var(--background-color);
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  display: block;
+}
+
+.stick:hover,
+.stick:active {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button.button:visited {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
+
+a .section-title {
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-text-color);
+  text-align: left;
+  letter-spacing: 0.06em;
+}
+
+.gallery-link {
+  text-decoration: none;
+}
+
+.gallery-link p {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+address {
+  font-style: normal;
+}
