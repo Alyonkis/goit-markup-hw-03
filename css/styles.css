@@ -19,13 +19,15 @@
   /* основной цвет фона hero*/
   --hero-background-color: #2f303a;
   --accent-background-dark-button: #188ce8;
+  /* цвет бордера шапки */
+  --header-accent-color: #ECECEC:
 
   /* основные шрифты */
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 
   /* на флексах */
-  --card-set-gap: 15px;
+  --card-set-gap: 30px;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -78,15 +80,17 @@ p {
   /* background-color: #188ce8; */
   /* outline: 1px solid tomato; */
 }
+.page-header {
+ box-shadow: var(--card-shadow);
+}  
 
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--header-accent-color);
+  
 }
-
-.page-header {
-  /* background-color: rgb(166, 218, 45); */
-}
+ 
 
 .visually-hidden {
   position: absolute;
@@ -113,7 +117,7 @@ p {
 }
 
 .primary {
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .type {
@@ -342,10 +346,7 @@ img {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-.page-header {
-  border-radius: o;
-  /* box-shadow: var(--card-shadow); */
-}
+
 
 /* page Portfolio */
 /* radiobuttons */
@@ -385,7 +386,7 @@ img {
   color: var(--title-text-color);
   text-align: left;
   letter-spacing: 0.06em;
-  margin: 20px 0 0 24px;
+  margin-bottom: 8px;
 }
 
 .gallery-link {
@@ -431,8 +432,8 @@ footer {
 
 .card-set {
   padding: 0;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: -30px;
+  margin-left: -30px;
   list-style: none;
   /* outline: 1px solid fuchsia; */
   display: flex;
@@ -451,18 +452,21 @@ footer {
 .card {
   box-shadow: var(--card-shadow);
   border-radius: 1px;
+  border-bottom: 1px solid var(--header-accent-color);
+  border-left: 1px solid var(--header-accent-color);
+  border-right: 1px solid var(--header-accent-color);
   overflow: hidden;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+
 }
 
 .card-content {
   padding: 15px;
 }
 
-.card-text {
-  margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-}
 
 .grid-item {
   /* outline: 1px solid rgb(89, 23, 243); */
