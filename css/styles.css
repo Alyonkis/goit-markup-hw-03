@@ -55,17 +55,14 @@ p {
 
 .section.no-padding {
   padding-top: 0;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 }
 
 h1,
+h2,
 h3,
 p {
   margin: 0;
-}
-
-h2 {
-  margin: 50;
 }
 
 .employeer h3 {
@@ -74,14 +71,17 @@ h2 {
 
 /* container */
 .container {
-  display: flex;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
   width: 1200px;
   /* background-color: #188ce8; */
   /* outline: 1px solid tomato; */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .page-header {
@@ -109,9 +109,11 @@ h2 {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  display: flex;
-  align-items: center;
   margin-right: 93px;
+}
+
+.primary {
+  padding: 24px;
 }
 
 .type {
@@ -164,6 +166,12 @@ h2 {
 
 .nav {
   display: flex;
+  align-items: center;
+}
+
+.list-team {
+  display: flex;
+  /* outline: 1px solid rgb(228, 134, 11); */
 }
 
 .auth-nav {
@@ -195,8 +203,8 @@ h2 {
 .hero {
   text-align: center;
   background-color: var(--hero-background-color);
-  padding-bottom: 100px;
-  padding-top: 220px;
+  padding-bottom: 200px;
+  padding-top: 200px;
   /* margin-bottom: между секциями быть не может, только падинг; */
 }
 
@@ -223,7 +231,6 @@ h2 {
   letter-spacing: 0.06em;
   padding: 10px 32px;
   border-radius: 4px;
-  min-width: 200px;
 }
 
 .button:hover,
@@ -251,6 +258,7 @@ section.section {
   line-height: 1.16;
   text-align: center;
   padding-top: 0;
+  margin-bottom: 50px;
 }
 
 .feature-list .title {
@@ -298,33 +306,31 @@ section.section {
   text-align: center;
 }
 
-.comand-type {
-  display: block;
-
-  /* .comand-item {
+/* .comand-item {
   /* border: ; */
-  border-radius: 4px;
+.comand-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.comand-type:not(:last-child) {
+.comand-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.comand-type {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-employeer {
+  background-color: var(--background-color);
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-footer {
-  background-color: var(--hero-background-color);
-  --new-accent: var(--primary-background-color);
-  color: var(--new-accent);
-}
-
-/* logo */
-.footer.logo {
-  color: var(--primary-background-color);
 }
 
 .address-nav .link {
@@ -336,6 +342,10 @@ footer {
   color: var(--primary-text-color);
   text-decoration: none;
 }
+.page-header {
+  border-radius: o;
+  /* box-shadow: var(--card-shadow); */
+}
 
 /* page Portfolio */
 /* radiobuttons */
@@ -346,11 +356,14 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
   display: block;
+  border: none;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .stick:hover,
@@ -372,6 +385,7 @@ footer {
   color: var(--title-text-color);
   text-align: left;
   letter-spacing: 0.06em;
+  margin: 20px 0 0 24px;
 }
 
 .gallery-link {
@@ -387,18 +401,26 @@ address {
   font-style: normal;
 }
 
-.footer {
-  display: block;
+footer {
+  background-color: var(--hero-background-color);
+  --new-accent: var(--primary-background-color);
+  color: var(--new-accent);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer .logo {
-  padding-bottom: 20px;
+.footer.logo {
+  color: var(--primary-background-color);
+  display: block;
+  margin-bottom: 20px;
 }
 
-.footer-item {
-  padding-top: 9px;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-text {
+  margin-bottom: 9px;
 }
 
 .btn {
@@ -409,7 +431,8 @@ address {
 
 .card-set {
   padding: 0;
-  margin: 0;
+  margin-top: 30px;
+  margin-left: 30px;
   list-style: none;
   /* outline: 1px solid fuchsia; */
   display: flex;
@@ -431,13 +454,14 @@ address {
   overflow: hidden;
 }
 
-
 .card-content {
   padding: 15px;
 }
 
 .card-text {
   margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .grid-item {

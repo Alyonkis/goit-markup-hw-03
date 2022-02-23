@@ -8,21 +8,23 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <header class="page-header">
-        <div class="container">
+        <div class="container header-container">
             <nav class="nav">
-                <a class="logo" class="container" href="./index.html"><span class="type">Web</span>Studio</a>
+                <a class="logo primary" class="container" href="./index.html"><span class="type">Web</span>Studio</a>
     
                 <ul class="site-nav list">
-                    <li class="item"><a class="link" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link current" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
                     <li class="item"><a class="link" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -35,146 +37,157 @@
     <main>
         <section class="gallery section">
 
-            <h1 class="visually-hidden">Портфолио</h1>
-            <ul class="btn list container">
-                <li>
-                    <button class="stick button" type="button">Все</button>
-                </li>
-                <li>
-                    <button class="stick button"  type="button">Веб-сайты</button>
-                </li>
-                <li>
-                    <button class="stick button"  type="button">Приложения</button>
-                </li>
-                <li>
-                    <button class="stick button"  type="button">Дизайн</button>
-                </li>
-                <li>
-                    <button class="stick button"  type="button">Маркетинг</button>
-                </li>
-            </ul>
-            
-            <div class="grid container">
-                <ul class="card-set list">
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="card gallery-link" href="">
-                                    <img src="./images/trio.jpg" alt="Фото Технокряк" width="370" height="294"></a>
-                            </div>
+            <div class="container">
+                <h1 class="visually-hidden">Портфолио</h1>
+                <ul class="btn list">
+                    <li class="btn-item">
+                        <button class="stick button" type="button">Все</button>
+                    </li>
+                    <li class="btn-item">
+                        <button class="stick button" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="btn-item">
+                        <button class="stick button" type="button">Приложения</button>
+                    </li>
+                    <li class="btn-item">
+                        <button class="stick button" type="button">Дизайн</button>
+                    </li>
+                    <li class="btn-item">
+                        <button class="stick button" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+                
+                
+                    <ul class="card-set list">
+                        <li class="grid-item">
+                            
+                                <div class="card-thumb">
+                                    <a class="card gallery-link" href="">
+                                        <img src="./images/trio.jpg" alt="Фото Технокряк" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
                                 <h3 class="grid section-title">Технокряк</h3>
                                 <p class="card-text">Веб-сайт</p>
-                        </div>
-                    </li>
-                    
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="card gallery-link" href="">
-                                
-                                <img src="./images/basket-ball.jpg" alt="Фото Постер" width="370" height="294"></a>
                             </div>
+                        </li>
+                
+                        <li class="grid-item">
+                            
+                                <div class="card-thumb">
+                                    <a class="card gallery-link" href="">
+                
+                                        <img src="./images/basket-ball.jpg" alt="Фото Постер" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
                                 <h3 class="grid section-title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                            <p>Дизайн</p>
-                        </div>
-                    </li>
-                    
-                  
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="gallery-link" href="">
-                                 <img src="./images/bear.jpg" alt="Фото Ресторан" width="370" height="294"></a>
+                                <p class="card-text">Дизайн</p>
                             </div>
-                            <h3 class="grid section-title">Ресторан <span lang="en">Seafood</span></h3>
-                            <p>Приложение</p>
-                        </div>
-                    </li>
-
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="gallery-link" href="">
-                                <img src="./images/listening.jpg" alt="Фото Проект" width="370" height="294"></a>
+                        </li>
+                
+                
+                        <li class="grid-item">
+                           
+                                <div class="card-thumb">
+                                    <a class="gallery-link" href="">
+                                        <img src="./images/bear.jpg" alt="Фото Ресторан" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
+                                <h3 class="grid section-title">Ресторан <span lang="en">Seafood</span></h3>
+                                <p class="card-text">Приложение</p>
                             </div>
-                            <h3 class="grid section-title">Проект <span lang="en">Prime</span></h3>
-                            <p>Маркетинг</p>
-                        </div>
-                    </li>
-
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="gallery-link" href="">
-                                 <img src="./images/boxes.jpg" alt="Фото Проект" width="370" height="294"></a>
+                        </li>
+                
+                        <li class="grid-item">
+                            
+                                <div class="card-thumb">
+                                    <a class="gallery-link" href="">
+                                        <img src="./images/listening.jpg" alt="Фото Проект" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
+                                <h3 class="grid section-title">Проект <span lang="en">Prime</span></h3>
+                                <p class="card-text">Маркетинг</p>
                             </div>
-                            <h3 class="grid section-title">Проект <span lang="en">Boxes</span></h3>
-                            <p>Приложение</p>
-                        </div>
-                    </li>
-
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="gallery-link" href="">
-                                <img src="./images/monitor.jpg" alt="Фото Вдохновление" width="370" height="294"></a>
+                        </li>
+                
+                        <li class="grid-item">
+                            
+                                <div class="card-thumb">
+                                    <a class="gallery-link" href="">
+                                        <img src="./images/boxes.jpg" alt="Фото Проект" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
+                                <h3 class="grid section-title">Проект <span lang="en">Boxes</span></h3>
+                                <p class="card-text">Приложение</p>
                             </div>
-                            <h3 class="grid section-title" lang="en">Inspiration has no Borders</h3>
-                            <p>Веб-сайт</p>
-                        </div>
-                    </li>
-
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="gallery-link" href="">
-                                <img src="./images/book.jpg" alt="Фото Издание" width="370" height="294"></a>
+                        </li>
+                
+                        <li class="grid-item">
+                            
+                                <div class="card-thumb">
+                                    <a class="gallery-link" href="">
+                                        <img src="./images/monitor.jpg" alt="Фото Вдохновление" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
+                                <h3 class="grid section-title" lang="en">Inspiration has no Borders</h3>
+                                <p class="card-text">Веб-сайт</p>
                             </div>
-                            <h3 class="grid section-title">Издание <span lang="en">Limited Edition</span></h3>
-                            <p>Дизайн</p>
-                        </div>
-                    </li>
-
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="gallery-link" href="">
-                                <img src="./images/project.jpg" alt="Фото Проект" width="370" height="294"></a>
+                        </li>
+                
+                        <li class="grid-item">
+                            
+                                <div class="card-thumb">
+                                    <a class="gallery-link" href="">
+                                        <img src="./images/book.jpg" alt="Фото Издание" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
+                                <h3 class="grid section-title">Издание <span lang="en">Limited Edition</span></h3>
+                                <p class="card-text">Дизайн</p>
                             </div>
-                            <h3 class="grid section-title">Проект <span lang="en">LAB</span></h3>
-                            <p>Маркетинг</p>
-                        </div>
-                    </li>
-
-                    <li class="grid-item">
-                        <div class="card">
-                            <div class="card-thumb">
-                                <a class="gallery-link" href="">
-                                <img src="./images/new-tablet.jpg" alt="Фото растущий бизнес" width="370" height="294"></a>
+                        </li>
+                
+                        <li class="grid-item">
+                            
+                                <div class="card-thumb">
+                                    <a class="gallery-link" href="">
+                                        <img src="./images/project.jpg" alt="Фото Проект" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
+                                <h3 class="grid section-title">Проект <span lang="en">LAB</span></h3>
+                                <p class="card-text">Маркетинг</p>
                             </div>
-                            <h3 class="grid section-title" lang="en">Growing Business</h3>
-                            <p>Приложение</p>
-                        </div>
-                    </li>
-
-                </ul>
+                        </li>
+                
+                        <li class="grid-item">
+                            
+                                <div class="card-thumb">
+                                    <a class="gallery-link" href="">
+                                        <img src="./images/new-tablet.jpg" alt="Фото растущий бизнес" width="370" height="294"></a>
+                                </div>
+                            <div class="card">
+                                <h3 class="grid section-title" lang="en">Growing Business</h3>
+                                <p class="card-text">Приложение</p>
+                            </div>
+                        </li>
+                
+                    </ul>
+                
             </div>
 
         </section>
     </main>
-    <footer>
-        <div class="container footer">
-            <a class="footer logo" href="./index.html"><span class="type">Web</span>Studio</a>
-            <address class="address-nav">
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="address-nav list">
+<footer>
+    <div class="container footer">
+        <a class="footer logo" href="./index.html"><span class="type">Web</span>Studio</a>
+        <address class="address-nav">
+            <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="address-nav list">
 
-                    <li class="footer-item"><a class="link" href="mailti:info@example.com">info@example.com</a></li>
-                    <li class="footer-item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
-        </div>
-    </footer>
-    </body>
-    
+                <li class="footer-item"><a class="link" href="mailti:info@example.com">info@example.com</a></li>
+                <li class="footer-item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            </ul>
+        </address>
+    </div>
+</footer>
+</body>
+
 </html>
